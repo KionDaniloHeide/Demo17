@@ -14,7 +14,7 @@ import javax.persistence.InheritanceType;
 @Inheritance(strategy = InheritanceType.TABLE_PER_CLASS)
 @Getter
 @Setter
-public abstract class AbstractVehicle {
+public sealed abstract class AbstractVehicle permits Car, ForkliftTruck, Motorbike {
     @Id
     @GeneratedValue
     private Long id;

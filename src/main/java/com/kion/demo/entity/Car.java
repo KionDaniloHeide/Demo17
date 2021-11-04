@@ -6,7 +6,7 @@ import javax.persistence.Entity;
 
 @Entity(name = "Car")
 @Data
-public class Car extends AbstractVehicle {
+public non-sealed class Car extends AbstractVehicle {
 
     @Override
     public int getWheelCount() {
